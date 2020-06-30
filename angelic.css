@@ -1,5 +1,7 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14pt;
+  margin-top: 55px;
 }
 
 header {
@@ -12,79 +14,46 @@ footer {
   margin: 10px;
 }
 
+.container {
+  width: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
 #home-img1 {
-  background-image: url(ombre_sky.jpeg);
+  background-image: url(lights.jpeg);
   background-size: center center;
   background-size: cover;
   height: 100%;
 }
 
-.background-attachment-fixed {
-  background-attachment: scroll;
-}
-
-#grid {
-  display: grid;
-}
-
-@media (min-width: 100px) {
-  #grid {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  #contact {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  #bio {
-    grid-column: 1;
-    grid-row: 2;
-  }
-}
-@media (min-width: 800px) {
-  #grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  #contact {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  #bio {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  #home-text1 {
-    position: fixed;
-  }
-}
-@media (min-width: 970px) {
-  #grid {
-    grid-template-columns: 40% 60%;
-  }
-}
-
-.home-layout {
-  padding-left: 3em;
-  padding-right: 1em;
-  padding-top: 8em;
-}
-
-#bio {
-  margin-bottom: 20px;
-}
-
-.bio-text {
-  background-color: rgba(167, 189, 231, 0.404);
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-}
-
-.projects-layout {
-  padding-left: 3em;
-  padding-right: 1em;
-  padding-top: 4em;
+#bio-img1 {
+  background-image: url(ombre_sky.jpeg);
+  background-size: center center;
+  background-size: cover;
+  height: 100%;
 }
 
 #projects-img1 {
@@ -94,18 +63,51 @@ footer {
   height: 100%;
 }
 
-.projects-card {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  background-color: rgba(167, 189, 231, 0.726);
+#contact-img1 {
+  background-image: url(crater_lake.jpeg);
+  background-size: center center;
+  background-size: cover;
+  height: 100%;
 }
 
-.projects-card:hover {
-  font-size: 105%;
-  width: 102%;
-  height: 105%;
+.background-attachment-fixed {
+  background-attachment: scroll;
+}
+
+#home-page {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1.5fr;
+}
+
+#home-text1 {
+  text-align: center;
+  grid-row: 2;
+}
+
+.bio-text,
+.home-text {
+  background-color: rgba(167, 189, 231, 0.404);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card {
+  background-color: rgba(167, 189, 231, 0.726);
+  border-radius: 3px;
+}
+
+.projects-card {
+  margin-bottom: 20px;
 }
 
 a {
   color: rgb(73, 73, 146);
+}
+
+#contact-info > img {
+  max-height: 400px;
+  width: auto;
+  object-fit: cover;
+  object-position: left 70%;
 }
