@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Angelic Phan - Home</title>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    ></script>
+    <!--Bootstrap-->
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,12 +15,19 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
     ></script>
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/8a738de79e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--My Style Sheet-->
     <link rel="stylesheet" type="text/css" href="angelic.css" media="screen" />
   </head>
-  <body>
+  <body id="home">
+    <!--Header-->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">AP</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,43 +42,120 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Angelic_Phan_Resume.pdf" target="_blank"
+                >Resume</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </nav>
     </header>
-    <section>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-3">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
+    <!--Header End-->
+    <!--Center-->
+    <div id="home-img1" class="background-attachment-fixed">
+      <div class="home-layout" id="grid">
+        <div class="lead" id="contact">
+          <div class="container" id="home-text1">
+            <div class="row">
+              <h1 class="display-3">Angelic Phan</h1>
+            </div>
+            <div class="row">
+              <p>
+                <i class="far fa-mobile"></i>
+                <span>&nbsp;&nbsp;Cell: (503)-382-9236</span>
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <i class="far fa-envelope"></i>
+                <span>&nbsp;Email:</span>
+                <a href="mailto:angelic.phan@gmail.com">
+                  angelic.phan@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <i class="fab fa-github"></i>
+                <span>&nbsp;Github:</span>
+                <a href="https://github.com/angelicphan" target="_blank"
+                  >angelicphan</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lead" id="bio">
+          <div class="bio-text">
+            <h4>ABOUT ME</h4>
+            <p>
+              Graduated from Portland State University in March of 2020 with a
+              B.S. in Computer Science, Magna Cum Laude. Currently looking for a
+              full-time position as a Software Developer. I am eager to learn
+              and try out new things, am always team player, strives to do my
+              best, and am never afraid to ask questions. If I do not understand
+              something or am stuck, I will either look it up or seek help from
+              my fellow collegues.
+            </p>
+          </div>
+          <div class="bio-text">
+            <h4>SKILLS</h4>
+            <p>
+              Although I do not have much professional working experience, I
+              have experience in the following:
+              <li>
+                Languages: C++, C, Java, Python, SQL, HTML, CSS, JavaScript,
+                jQuery, Git ...
+              </li>
+              <li>
+                Systems/Frameworks: Linux/Unix, Node, Django, MongoDB, Bootstrap
+                ...
+              </li>
+              <li>Tools: Github, Atom, VS Code, IntelliJ, Postman ...</li>
+            </p>
+          </div>
+          <div class="bio-text">
+            <h4>GOALS</h4>
+            <p>
+              At the moment, my goals are to find a job that I will enjoy doing.
+              A working environment that fosters growth, creativity, and pride
+              in what we do. Because I know that I am not perfect, and that
+              there is much for me to learn, I want to gain the necessary skills
+              and experience that will take me further and open up new
+              possibilities. I want to be challenged to do better and be better.
+              I want to contribute to projects that either help others or bring
+              joy to them. Useful technologies that we enjoy making and others
+              enjoy using.
+            </p>
+          </div>
+          <div class="bio-text">
+            <h4>INTERESTS</h4>
+            <p>
+              Besides being interested in software development, I also enjoy:
+              <li>Reading</li>
+              <li>Making art: drawing, painting, photography, etc.</li>
+              <li>Watching t.v. shows and dramas</li>
+              <li>Eating good food</li>
+              <li>
+                Being outdoors - playing sports, hiking, picnics, fishing,
+                clamming, biking, etc.
+              </li>
+              <li>Travelling</li>
+              <li>Listening to music</li>
+              <li>Lazing around in bed</li>
+              <li>Hanging out with friends and family</li>
+            </p>
+          </div>
         </div>
       </div>
-    </section>
-    <footer></footer>
+    </div>
+    <!--Center End-->
+    <!--Footer-->
+    <footer>Angelic Phan <i class="far fa-copyright"></i> 2020</footer>
+    <!--Footer End-->
   </body>
 </html>
