@@ -111,3 +111,8 @@ a {
   object-fit: cover;
   object-position: left 70%;
 }
+
+.my-contacts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
