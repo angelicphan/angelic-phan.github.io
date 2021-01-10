@@ -116,3 +116,9 @@ a {
   display: grid;
   grid-template-columns: auto auto auto;
 }
+@media (max-width: 576px) {
+  .my-contacts {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
