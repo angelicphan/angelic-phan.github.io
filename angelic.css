@@ -2,6 +2,7 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 14pt;
   margin-top: 55px;
+  min-height: 95vh;
 }
 
 header {
@@ -43,28 +44,29 @@ footer {
 }
 
 #home-img1 {
-  background-image: url(lights.jpeg);
+  background-image: url(assettes/lights.jpeg);
   background-size: center center;
   background-size: cover;
   height: 100%;
 }
 
 #bio-img1 {
-  background-image: url(ombre_sky.jpeg);
+  background-image: url(../assettes/ombre_sky.jpeg);
   background-size: center center;
   background-size: cover;
   height: 100%;
 }
 
 #projects-img1 {
-  background-image: url(yellow_houses.jpeg);
+  background-image: url(../assettes/yellow_houses.jpeg);
   background-size: center center;
   background-size: cover;
-  height: 100%;
+  /*height: 100%;*/
+  height: 98vh;
 }
 
 #contact-img1 {
-  background-image: url(crater_lake.jpeg);
+  background-image: url(../assettes/crater_lake.jpeg);
   background-size: center center;
   background-size: cover;
   height: 100%;
@@ -86,19 +88,22 @@ footer {
 
 .bio-text,
 .home-text {
-  background-color: rgba(167, 189, 231, 0.404);
+  background-color: rgba(167, 189, 231, 0.6);
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
 .card {
-  background-color: rgba(167, 189, 231, 0.726);
+  background-color: rgba(167, 189, 231, 0.8);
   border-radius: 3px;
 }
 
 .projects-card {
-  margin-bottom: 20px;
+  text-align: center;
+  height: 250px;
+  overflow: auto;
+  margin-bottom: 10px;
 }
 
 a {
